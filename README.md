@@ -1,2 +1,2 @@
-# reinvent-challenge-certification
-Final step of the re:Invent challenge with LocalStack
+# reinvent-challenge-terraform
+Continuation of the LocalStack @ re:Invent grand challenge
