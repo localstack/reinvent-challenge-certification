@@ -55,10 +55,10 @@ resource "aws_iam_role" "lambda_role" {
 resource "aws_lambda_function" "certification-lambda" {
   function_name = "certification-lambda"
 
-  filename         = "../demo-lambda.zip"
+  filename         = "../certification-lambda.zip"
   handler          = "handler.handler"
   role             = aws_iam_role.lambda_role.arn
   runtime          = "python3.9"
 
-  source_code_hash = filebase64sha256("../demo-lambda.zip")
+  source_code_hash = filebase64sha256("../certification-lambda.zip")
 }
